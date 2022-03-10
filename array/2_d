@@ -1,0 +1,37 @@
+
+#include <stdio.h>
+#define ROW 2
+#define COL 3
+int main()
+{
+    /*int arr[2][3]={10,20,30,40,50};//method-1
+    int a[2][3]={{100,200,300},{400,500,500}};//method-2
+    printf("a[0][1]=%d",a[0][1]);//accessing row zero  column 1*/
+    /*
+    for(i=0;i<ROW;i++)
+    {
+        for(j=0;j<COL;j++)
+        {
+            printf("\na[%d][%d]=%p\n value=%d",i,j,&a[i][j],a[i][j]);
+        }
+    }*/
+    int array[2][3];
+    int i,j;
+    for(i=0;i<ROW;i++)
+    {
+        for(j=0;j<COL;j++)
+        {
+            scanf("%d\n",&array[i][j]);
+        }
+    }
+    for(i=0;i<ROW;i++)
+    {
+        for(j=0;j<COL;j++)
+        {
+            printf("%d\n",array[i][j]);
+        }
+    }
+    
+
+    return 0;
+}
